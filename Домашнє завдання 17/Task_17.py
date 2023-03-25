@@ -20,5 +20,5 @@ for key, value in my_dict.items():
 
 with open("my_csv.csv", "w", newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["ID", "Имя", "Возраст", "Телефон"])
+    writer.writerow(["ID", "Имʼя", "Вік", "Телефон"])
     writer.writerows(rows)
