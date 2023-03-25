@@ -9,4 +9,4 @@ with open("file.txt", "w") as file:
 
 with open("file.txt", "a") as file:
     file.write(line3 + "\n")
-    file.write(line4 + "\n")
+    file.write(line4)
