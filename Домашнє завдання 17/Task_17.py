@@ -13,7 +13,7 @@ for key, value in my_dict.items():
     name = value[0]
     age = value[1]
     if random.random() < 0.75:
-        phone = random.choice(operators) + str(random.randint(1000000, 9999999))
+        phone = random.choice(operators) + str(random.randint(0, 9999999)).zfill(7)
     else:
         phone = ""
     rows.append([key, name, age, phone])
