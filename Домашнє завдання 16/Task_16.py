@@ -6,7 +6,7 @@ my_dict = {
     376548: ("Serge", 20),
     345619: ("David", 20),
     456728: ("Michael", 25),
-	 675489: ("Andrew", 19)
+    675489: ("Andrew", 19)
 }
 
 with open("my_dict.json", "w") as file:
