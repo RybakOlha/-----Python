@@ -1,15 +1,12 @@
-def geometric_progression(start, ratio):
+def geometric_progression(start, ratio, cnt):
     value = start
-    while True:
+    for i in range(cnt):
         yield value
         value *= ratio
 
 
 n = int(input())
-cnt = 0
-for i in geometric_progression(1, 2):
-    if cnt < n:
+it = geometric_progression(1, 2, n)
+for i in it:
       print(i)
-    else:
-      break
-    cnt += 1
+   
