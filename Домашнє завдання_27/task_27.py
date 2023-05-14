@@ -66,39 +66,40 @@ def clear():
 window = tk.Tk()
 window.geometry('400x350')
 window.title("Уведіть дані")
+window.grid_columnconfigure(0, weight=1)
 
 name_label = tk.Label(window, text="Имʼя:")
-name_label.grid(row=0, column=0, padx=10, pady=10, sticky="w")
+name_label.grid(row=0, column=0, padx=10, pady=10, sticky="e")
 
 name_entry = tk.Entry(window)
 name_entry.grid(row=0, column=1, padx=10, pady=10)
 
 address1_label = tk.Label(window, text="Адреса 1:")
-address1_label.grid(row=1, column=0, padx=10, pady=10, sticky="w")
+address1_label.grid(row=1, column=0, padx=10, pady=10, sticky="e")
 
 address1_entry = tk.Entry(window)
 address1_entry.grid(row=1, column=1, padx=10, pady=10)
 
 address2_label = tk.Label(window, text="Адреса 2:")
-address2_label.grid(row=2, column=0, padx=10, pady=10, sticky="w")
+address2_label.grid(row=2, column=0, padx=10, pady=10, sticky="e")
 
 address2_entry = tk.Entry(window)
 address2_entry.grid(row=2, column=1, padx=10, pady=10)
 
 city_label = tk.Label(window, text="Місто:")
-city_label.grid(row=3, column=0, padx=10, pady=10, sticky="w")
+city_label.grid(row=3, column=0, padx=10, pady=10, sticky="e")
 
 city_entry = tk.Entry(window)
 city_entry.grid(row=3, column=1, padx=10, pady=10)
 
 region_label = tk.Label(window, text="Область:")
-region_label.grid(row=4, column=0, padx=10, pady=10, sticky="w")
+region_label.grid(row=4, column=0, padx=10, pady=10, sticky="e")
 
 region_entry = tk.Entry(window)
 region_entry.grid(row=4, column=1, padx=10, pady=10)
 
 zip_label = tk.Label(window, text="Поштовий індекс:")
-zip_label.grid(row=5, column=0, padx=10, pady=10, sticky="w")
+zip_label.grid(row=5, column=0, padx=10, pady=10, sticky="e")
 
 zip_entry = tk.Entry(window)
 zip_entry.grid(row=5, column=1, padx=10, pady=10)
